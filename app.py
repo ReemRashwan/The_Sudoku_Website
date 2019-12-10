@@ -8,4 +8,7 @@ app = Flask(__name__)
 def index():
     return "Hello World!"
 
+@app.route("/sudoku")
+def s():
+    return render_template("sudoku.html")
 
