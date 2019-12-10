@@ -1,0 +1,10 @@
+<!-- Empty Sudoku Table -->
+<table>
+    {% for i in range(1, 9+1) %}
+        <tr>
+            {% for j in range(1, 9+1) %}
+                <td>{{ j }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
