@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 
 # class Sudoku:
 #     def __init__(self):
@@ -42,12 +42,17 @@ from typing import Dict
 
 
 class SudokuGame:
-    def __init__(self, grid: Dict = None) -> None:
-        self.grid: Dict = grid
+    def __init__(self, sudoku_values: list = None) -> None:
+        self.grid: Dict = {}
+        self.remaining_cells: int = 81  # 9 * 9 cells
 
         # if grid is not provided
-        if self.grid is None:
+        if sudoku_values is None:
             self.initialize_grid()
+            self.remaining_cells = 81
+        else:
+            self.remaining_cells = 81 - sudoku_values.count(0)
+            self.load(sudoku_values)
 
     def initialize_grid(self):
         # declaration of the sudoku grid filled with zeros
@@ -62,13 +67,11 @@ class SudokuGame:
             'H': None,
             'I': None
         }
-
         # initialization of the sudoku grid, 9 * 9 zeros
         for key in self.grid.keys():
             # for each row, create a list of nine zeros.
             self.grid[key] = [0] * 9
             # self.grid[key] = [0 for _ in range(9)]
-
 
     def display(self) -> None:
         # print 9 rows
@@ -76,10 +79,14 @@ class SudokuGame:
             print(*row)
 
     def solve(self):
+
         pass
 
     def is_valid(self, index: int) -> bool:
         # if the value doesn't exist in row, col, box then it is valid.
+        pass
+
+    def load(self, sudoku_values: List) -> None:
         pass
 
 
