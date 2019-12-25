@@ -77,9 +77,6 @@ class SudokuGame:
             # find the first index in the row except for current cell
             row_values = self.grid[row_start_index: row_start_index + 9]
 
-            # remove current cell from list
-            # del(row_values[cell_offset])
-
             if value in row_values:
                 return False
 
@@ -89,8 +86,6 @@ class SudokuGame:
         def is_valid_col() -> bool:
             # rows starting indices
             for i in range(0, 81, 9):
-                # if i == row_start_index:
-                    # continue
                 if value == self.grid[i + cell_offset]:
                     return False
             # if no duplicates
@@ -122,9 +117,6 @@ class SudokuGame:
                 # get the next two indices after the starting index in each row
                 for item in box_rows_start_indices:
                     box_indices.extend([item, item + 1, item + 2])
-
-                # delete current cell index from list
-                # del(box_indices[box_indices.index(index)])
 
                 # get box values
                 for i in box_indices:
@@ -174,8 +166,11 @@ def read_sudokus_from_file(file_path: str) -> List[List[int]]:
 if __name__ == "__main__":
     sudokus = read_sudokus_from_file("sudoku.txt")
     sudoku = SudokuGame(sudokus[0])
+    sudoku.display()
+    print("====================")
     sudoku.solve_sudoku()
+    sudoku.display()
     if sudoku.check_solution(read_sudokus_from_file("sudoku_solution.txt")[0]):
-        print("Yaaaaaaaaaay")
+        print("Right Solution")
     else:
-        print("No Match")
+        print("Wrong Solution")

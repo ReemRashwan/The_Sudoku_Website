@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sudoku_solution.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Reem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Reem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sudoku_generator" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sudoku_solver.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sudoku.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,28 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sudoku">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sudoku" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="application" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Sudoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.sudoku" />
         <item itemvalue="Python.application" />
       </list>
@@ -158,7 +182,13 @@
       <option name="project" value="LOCAL" />
       <updated>1576938825387</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL؜٠٠٠٠٦" summary="Working Algorithm">
+      <created>1577218386565</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٦" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٦" />
+      <updated>1577218386566</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -203,7 +233,8 @@
     <MESSAGE value="Create the SudokuGame Class with display function." />
     <MESSAGE value="Modify SudokuGame Constructor to accept list instead of dict, and add load function definition" />
     <MESSAGE value="Read sudoku from file, solve function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Read sudoku from file, solve function." />
+    <MESSAGE value="Working Algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working Algorithm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1577213630922">
@@ -214,42 +245,46 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="597" y="133" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1536.834@0.0.1536.834" timestamp="1577213608978" />
-    <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577218181808">
+    <state x="424" y="11" key="CommitChangelistDialog2" timestamp="1577218382871">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577218181808" />
-    <state width="1515" height="231" key="GridCell.Tab.0.center" timestamp="1577218181808">
+    <state x="424" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577218382871" />
+    <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577274877292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577218181808" />
-    <state width="1515" height="231" key="GridCell.Tab.0.left" timestamp="1577218181808">
+    <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577274877292" />
+    <state width="1515" height="231" key="GridCell.Tab.0.center" timestamp="1577274877292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577218181808" />
-    <state width="1515" height="231" key="GridCell.Tab.0.right" timestamp="1577218181808">
+    <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577274877292" />
+    <state width="1515" height="231" key="GridCell.Tab.0.left" timestamp="1577274877292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577218181808" />
-    <state width="1515" height="269" key="GridCell.Tab.1.bottom" timestamp="1577216707798">
+    <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577274877292" />
+    <state width="1515" height="231" key="GridCell.Tab.0.right" timestamp="1577274877292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="269" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577216707798" />
-    <state width="1515" height="269" key="GridCell.Tab.1.center" timestamp="1577216707798">
+    <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577274877292" />
+    <state width="1515" height="269" key="GridCell.Tab.1.bottom" timestamp="1577218387680">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="269" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1577216707798" />
-    <state width="1515" height="269" key="GridCell.Tab.1.left" timestamp="1577216707798">
+    <state width="1515" height="269" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
+    <state width="1515" height="269" key="GridCell.Tab.1.center" timestamp="1577218387680">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="269" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1577216707798" />
-    <state width="1515" height="269" key="GridCell.Tab.1.right" timestamp="1577216707798">
+    <state width="1515" height="269" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
+    <state width="1515" height="269" key="GridCell.Tab.1.left" timestamp="1577218387680">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="269" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577216707798" />
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1577180280887">
+    <state width="1515" height="269" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
+    <state width="1515" height="269" key="GridCell.Tab.1.right" timestamp="1577218387680">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577180280887" />
+    <state width="1515" height="269" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1577275425848">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577275425848" />
     <state x="341" y="154" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1577216185634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
