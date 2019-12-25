@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/sudoku_generator" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sudoku_solver.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sudoku.html" beforeDir="false" />
-    </list>
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +180,25 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٠٦" />
       <updated>1577218386566</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL؜٠٠٠٠٧" summary="Delete extra comments in sudoku.py">
+      <created>1577276260160</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٧" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٧" />
+      <updated>1577276260160</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٨" summary="Add sudoku solver in app.py">
+      <created>1577276326616</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٨" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٨" />
+      <updated>1577276326616</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٠٩" summary="Add sudoku generator and sudoku solver files.">
+      <created>1577276383043</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٩" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٩" />
+      <updated>1577276383043</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -206,6 +216,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="COLUMN_WIDTH">
+                <map>
+                  <entry key="2" value="46" />
+                  <entry key="3" value="105" />
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -228,13 +244,17 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="add sudoku route in app.py" />
     <MESSAGE value="Create empty Sudoku grid using jinja" />
     <MESSAGE value="Create the SudokuGame Class with display function." />
     <MESSAGE value="Modify SudokuGame Constructor to accept list instead of dict, and add load function definition" />
     <MESSAGE value="Read sudoku from file, solve function." />
     <MESSAGE value="Working Algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Algorithm" />
+    <MESSAGE value="Delete extra comments in sudoku.py" />
+    <MESSAGE value="Add sudoku solver in app.py" />
+    <MESSAGE value="Add sudoku generator and sudoku solver files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sudoku generator and sudoku solver files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1577213630922">
@@ -245,10 +265,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="597" y="133" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1536.834@0.0.1536.834" timestamp="1577213608978" />
-    <state x="462" y="23" key="CommitChangelistDialog2" timestamp="1577276325104">
+    <state x="462" y="23" key="CommitChangelistDialog2" timestamp="1577276381958">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="462" y="23" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577276325104" />
+    <state x="462" y="23" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577276381958" />
     <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577274877292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
