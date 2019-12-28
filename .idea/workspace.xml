@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Create a separate file for sudoku table.">
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Make templates reload automatically.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +219,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠١٢" />
       <updated>1577544280786</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL؜٠٠٠١٣" summary="Make templates reload automatically.">
+      <created>1577544398761</created>
+      <option name="number" value="LOCAL؜٠٠٠١٣" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٣" />
+      <updated>1577544398761</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -279,7 +284,8 @@
     <MESSAGE value="Create a separate file for sudoku table." />
     <MESSAGE value="Create the sudoku table with its CSS." />
     <MESSAGE value="Move direction attribute to main tag instead of html tag, add CSS file link." />
-    <option name="LAST_COMMIT_MESSAGE" value="Move direction attribute to main tag instead of html tag, add CSS file link." />
+    <MESSAGE value="Make templates reload automatically." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make templates reload automatically." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1577213630922">
@@ -294,10 +300,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544093941" />
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577544355792">
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577544461690">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577544355792" />
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577544461690" />
     <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577274877292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -330,10 +336,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="269" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1577544006081">
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1577544523283">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544006081" />
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544523283" />
     <state x="341" y="154" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1577216185634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
