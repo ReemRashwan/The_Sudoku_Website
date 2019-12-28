@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="" />
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Create a separate file for sudoku table.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +202,25 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٠٩" />
       <updated>1577276383043</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL؜٠٠٠١٠" summary="Create a separate file for sudoku table.">
+      <created>1577276648427</created>
+      <option name="number" value="LOCAL؜٠٠٠١٠" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٠" />
+      <updated>1577276648427</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠١١" summary="Create the sudoku table with its CSS.">
+      <created>1577544174733</created>
+      <option name="number" value="LOCAL؜٠٠٠١١" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١١" />
+      <updated>1577544174733</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠١٢" summary="Move direction attribute to main tag instead of html tag, add CSS file link.">
+      <created>1577544280786</created>
+      <option name="number" value="LOCAL؜٠٠٠١٢" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٢" />
+      <updated>1577544280786</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -254,7 +276,10 @@
     <MESSAGE value="Delete extra comments in sudoku.py" />
     <MESSAGE value="Add sudoku solver in app.py" />
     <MESSAGE value="Add sudoku generator and sudoku solver files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sudoku generator and sudoku solver files." />
+    <MESSAGE value="Create a separate file for sudoku table." />
+    <MESSAGE value="Create the sudoku table with its CSS." />
+    <MESSAGE value="Move direction attribute to main tag instead of html tag, add CSS file link." />
+    <option name="LAST_COMMIT_MESSAGE" value="Move direction attribute to main tag instead of html tag, add CSS file link." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1577213630922">
@@ -265,10 +290,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="597" y="133" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1536.834@0.0.1536.834" timestamp="1577213608978" />
-    <state x="462" y="23" key="CommitChangelistDialog2" timestamp="1577276381958">
+    <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577544093941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="462" y="23" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577276381958" />
+    <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544093941" />
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577544355792">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577544355792" />
     <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577274877292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -301,10 +330,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="269" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1577275425848">
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1577544006081">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577275425848" />
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544006081" />
     <state x="341" y="154" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1577216185634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -1,13 +1,14 @@
 from flask import Flask
-from flask import request, render_template, redirect
+from flask import request, render_template
 from sudoku import SudokuGame
 
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 
 @app.route("/")
 def index():
-    return "Welcome to Our Sudoku"
+    return render_template("index.html")
 
 
 @app.route("/sudoku_solver", methods=["GET", "POST"])
@@ -25,7 +26,7 @@ def sudoku_solver():
         sudoku = SudokuGame(sudoku_values)
         sudoku.solve_sudoku()
 
-        render_template("sudoku_solver", sudoku_values=sudoku_values)
+        render_template("sudoku_solver.html", sudoku_values=sudoku_values)
 
 
 
