@@ -1,0 +1,45 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#sudoku_table {
+    width: auto;
+    border: 2px solid red;s
+}
+#sudoku_table td {
+    padding: 2px;
+    border-color: black;
+    width: 40px;
+    height: 40px;
+
+}
+
+#sudoku_table input {
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+    border: none;
+    text-align: center;
+}
+#sudoku_table input:focus{
+    outline: none;
+}
+
+#sudoku_table td:nth-child(3n){
+    border-right: 3px solid red;
+}
+
+#sudoku_table tr:nth-child(3n){
+    border-bottom: 3px solid red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
