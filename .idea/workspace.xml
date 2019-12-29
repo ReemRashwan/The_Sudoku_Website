@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Change sudoku_table code to accept dict instead of list.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sudoku_solver.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_solver.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sudoku_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +244,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠١٦" />
       <updated>1577662266647</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL؜٠٠٠١٧" summary="Change sudoku_table code to accept dict instead of list.">
+      <created>1577662626650</created>
+      <option name="number" value="LOCAL؜٠٠٠١٧" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٧" />
+      <updated>1577662626650</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -308,7 +313,8 @@
     <MESSAGE value="Delete empty helpers.py file." />
     <MESSAGE value="Add index.html and sudoku_generator.html file." />
     <MESSAGE value="Make responsive sudoku table, adjust overall style." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make responsive sudoku table, adjust overall style." />
+    <MESSAGE value="Change sudoku_table code to accept dict instead of list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change sudoku_table code to accept dict instead of list." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1577213630922">
@@ -323,26 +329,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544093941" />
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577662264984">
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577662668209">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577662264984" />
-    <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577274877292">
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577662668209" />
+    <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577662813191">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577274877292" />
-    <state width="1515" height="231" key="GridCell.Tab.0.center" timestamp="1577274877292">
+    <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577662813191" />
+    <state width="1515" height="231" key="GridCell.Tab.0.center" timestamp="1577662813191">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577274877292" />
-    <state width="1515" height="231" key="GridCell.Tab.0.left" timestamp="1577274877292">
+    <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577662813191" />
+    <state width="1515" height="231" key="GridCell.Tab.0.left" timestamp="1577662813191">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577274877292" />
-    <state width="1515" height="231" key="GridCell.Tab.0.right" timestamp="1577274877292">
+    <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577662813191" />
+    <state width="1515" height="231" key="GridCell.Tab.0.right" timestamp="1577662813191">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577274877292" />
+    <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577662813191" />
     <state width="1515" height="269" key="GridCell.Tab.1.bottom" timestamp="1577218387680">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

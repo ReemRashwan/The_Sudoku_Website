@@ -1,5 +1,19 @@
 {% extends "layout.html" %}
 
 {% block main %}
-    {% include "sudoku_table.html" %}
+    <div class="row">
+        <div class="col-sm-4 offset-sm-1 center_vertically">
+            <p class="text">أهلا بك، رجاءً أدخل قيم السودوكو لنتمكن من حلها لك.</p>
+        </div>
+        <div class="col-sm-6">
+            <form>
+                <div class="form-group ">
+                    {% include "sudoku_table.html" %}
+                </div>
+                <div class="center_horizontally">
+                    <button class="btn btn-primary btn-lg">حل السودوكو</button>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock main %}
