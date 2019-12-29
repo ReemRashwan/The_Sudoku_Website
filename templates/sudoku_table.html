@@ -1,22 +1,19 @@
 <table id="sudoku_table">
     {% if sudoku_values is defined %}
         <!-- Filled Sudoku Values-->
-        {% for cell_value in sudoku_values %}
-            {% if loop.index0 % 9 == 0 %}
-                <tr>
-            {% endif %}
-                    <td>{{ cell_value }}</td>
-            {% if loop.index0 % 9 == 0 %}
-                </tr>
-            {% endif %}
+        {% for row_key in sudoku_values %}
+            <tr>
+                {% for col_index in sudoku_values[row_key] %}
+                    <td>{{ sudoku_values[row_key][col_index] }}</td>
+                {% endfor %}
+            </tr>
         {% endfor %}
     {% else %}
         <!-- Empty Sudoku Table -->
-        {% for i in range(9) %}
+        {% for letter in 'ABCDEFGHI' %}
             <tr>
-                {% for j in range(9) %}
-                    <td><input type="number" min="1" max="9" name="cell_{{i}}_{{j}}"></td>
-                    <!-- <td>{{ j }}</td> -->
+                {% for number in range(9) %}
+                    <td><input type="number" min="1" max="9" name="cell_{{ letter }}{{ number }}"></td>
                 {% endfor %}
             </tr>
         {% endfor %}
