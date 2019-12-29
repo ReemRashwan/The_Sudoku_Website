@@ -1,29 +1,54 @@
-table, th, td {
+/* Generic Classes */
+.center_vertically {
+    display: flex;
+    align-items: center;  /* Vertical Align */
+}
+
+.center_horizontally {
+    display: flex;
+    justify-content: center;  /* Horizontal Align */
+}
+
+.text {
+    font-size: 35px; 
+    text-align: right;
+    direction: rtl;
+}
+/* main */
+main {
+    padding: 30px 0px;
+}
+/* main div {
+    border: 1px solid black;
+} */
+
+
+/* inner table borders */
+th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
+/* outer table borders */
 #sudoku_table {
+    border: 3px solid red;
+    /* table-layout: fixed; */
     width: auto;
-    border: 2px solid red;s
-}
-#sudoku_table td {
-    padding: 2px;
-    border-color: black;
-    width: 40px;
-    height: 40px;
-
 }
 
-#sudoku_table input {
-    width: 100%;
-    padding: 5px;
-    margin: 0px;
-    border: none;
+#sudoku_table td input {
     text-align: center;
+    width: 3.5vw;
+    height: 3.5vw;
+    border: none;
 }
-#sudoku_table input:focus{
-    outline: none;
+
+/* for GET page */
+#sudoku_table td {
+    width: 3.5vw;
+    height: 3.5vw;
 }
+
 
 #sudoku_table td:nth-child(3n){
     border-right: 3px solid red;
@@ -31,6 +56,11 @@ table, th, td {
 
 #sudoku_table tr:nth-child(3n){
     border-bottom: 3px solid red;
+}
+
+ /* remove blue outline on focus */
+#sudoku_table input:focus{
+    outline: none;
 }
 
 input::-webkit-outer-spin-button,

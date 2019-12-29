@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Make templates reload automatically.">
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sudoku_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -225,7 +225,19 @@
       <option name="presentableId" value="LOCAL؜٠٠٠١٣" />
       <updated>1577544398761</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL؜٠٠٠١٤" summary="Delete empty helpers.py file.">
+      <created>1577544720846</created>
+      <option name="number" value="LOCAL؜٠٠٠١٤" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٤" />
+      <updated>1577544720846</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠١٥" summary="Add index.html and sudoku_generator.html file.">
+      <created>1577544771112</created>
+      <option name="number" value="LOCAL؜٠٠٠١٥" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٥" />
+      <updated>1577544771112</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -285,7 +297,9 @@
     <MESSAGE value="Create the sudoku table with its CSS." />
     <MESSAGE value="Move direction attribute to main tag instead of html tag, add CSS file link." />
     <MESSAGE value="Make templates reload automatically." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make templates reload automatically." />
+    <MESSAGE value="Delete empty helpers.py file." />
+    <MESSAGE value="Add index.html and sudoku_generator.html file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add index.html and sudoku_generator.html file." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1577213630922">
@@ -300,10 +314,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544093941" />
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577544719692">
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577544770158">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577544719692" />
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577544770158" />
     <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577274877292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -336,10 +350,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="269" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1577544523283">
+    <state x="277" y="60" key="SettingsEditor" timestamp="1577545672537">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544523283" />
+    <state x="277" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1577545672537" />
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1577662185698">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1577662185698" />
     <state x="341" y="154" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1577216185634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
