@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Change sudoku_table code to accept dict instead of list.">
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sudoku_solver.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_solver.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sudoku_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,17 +251,14 @@
       <option name="presentableId" value="LOCAL؜٠٠٠١٧" />
       <updated>1577662626650</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL؜٠٠٠١٨" summary="Add styling classes to sudoku_solver and necessary styling elements.">
+      <created>1577663072403</created>
+      <option name="number" value="LOCAL؜٠٠٠١٨" />
+      <option name="presentableId" value="LOCAL؜٠٠٠١٨" />
+      <updated>1577663072403</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -314,7 +312,8 @@
     <MESSAGE value="Add index.html and sudoku_generator.html file." />
     <MESSAGE value="Make responsive sudoku table, adjust overall style." />
     <MESSAGE value="Change sudoku_table code to accept dict instead of list." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change sudoku_table code to accept dict instead of list." />
+    <MESSAGE value="Add styling classes to sudoku_solver and necessary styling elements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add styling classes to sudoku_solver and necessary styling elements." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1577213630922">
@@ -329,42 +328,46 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1577544093941" />
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577662668209">
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1577663071285">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577662668209" />
-    <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577662813191">
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577663071285" />
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1577665011569">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577662813191" />
-    <state width="1515" height="231" key="GridCell.Tab.0.center" timestamp="1577662813191">
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1577665011569" />
+    <state width="1515" height="231" key="GridCell.Tab.0.bottom" timestamp="1577667460858">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577662813191" />
-    <state width="1515" height="231" key="GridCell.Tab.0.left" timestamp="1577662813191">
+    <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577667460858" />
+    <state width="1515" height="231" key="GridCell.Tab.0.center" timestamp="1577667460858">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577662813191" />
-    <state width="1515" height="231" key="GridCell.Tab.0.right" timestamp="1577662813191">
+    <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577667460858" />
+    <state width="1515" height="231" key="GridCell.Tab.0.left" timestamp="1577667460858">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577662813191" />
-    <state width="1515" height="269" key="GridCell.Tab.1.bottom" timestamp="1577218387680">
+    <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577667460858" />
+    <state width="1515" height="231" key="GridCell.Tab.0.right" timestamp="1577667460858">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="269" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
-    <state width="1515" height="269" key="GridCell.Tab.1.center" timestamp="1577218387680">
+    <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577667460858" />
+    <state width="1515" height="269" key="GridCell.Tab.1.bottom" timestamp="1577667276489">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="269" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
-    <state width="1515" height="269" key="GridCell.Tab.1.left" timestamp="1577218387680">
+    <state width="1515" height="269" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577667276489" />
+    <state width="1515" height="269" key="GridCell.Tab.1.center" timestamp="1577667276489">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="269" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
-    <state width="1515" height="269" key="GridCell.Tab.1.right" timestamp="1577218387680">
+    <state width="1515" height="269" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1577667276489" />
+    <state width="1515" height="269" key="GridCell.Tab.1.left" timestamp="1577667276489">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="269" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577218387680" />
+    <state width="1515" height="269" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1577667276489" />
+    <state width="1515" height="269" key="GridCell.Tab.1.right" timestamp="1577667276489">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="269" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577667276489" />
     <state x="277" y="60" key="SettingsEditor" timestamp="1577545672537">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

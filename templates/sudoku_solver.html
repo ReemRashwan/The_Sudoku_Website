@@ -6,8 +6,8 @@
             <p class="text">أهلا بك، رجاءً أدخل قيم السودوكو لنتمكن من حلها لك.</p>
         </div>
         <div class="col-sm-6">
-            <form>
-                <div class="form-group ">
+            <form method="POST" action="sudoku_solver">
+                <div class="form-group">
                     {% include "sudoku_table.html" %}
                 </div>
                 <div class="center_horizontally">
