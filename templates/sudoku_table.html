@@ -4,7 +4,7 @@
         {% for row_key in sudoku_values %}
             <tr>
                 {% for col_index in sudoku_values[row_key] %}
-                    <td>{{ sudoku_values[row_key][col_index] }}</td>
+                    <td>{{ sudoku_values[row_key][loop.index0] }}</td>
                 {% endfor %}
             </tr>
         {% endfor %}
