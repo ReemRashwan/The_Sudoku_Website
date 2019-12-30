@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-sm-4 offset-sm-1 center_vertically">
+            <p class="text">شكرا لاستخدامك موقعنا، ها هو حل السودوكو.</p>
+        </div>
+        <div class="col-sm-6">
+            {% include "sudoku_table.html" %}
+        </div>
+    </div>
+{% endblock main %}
