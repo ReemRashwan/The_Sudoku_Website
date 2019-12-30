@@ -25,13 +25,13 @@ main {
 
 /* inner table borders */
 th, td {
-    border: 1px solid black;
+    border: 3px solid gray;
     border-collapse: collapse;
 }
 
 /* outer table borders */
 #sudoku_table {
-    border: 3px solid red;
+    border: 3px solid #2A293E;
     /* table-layout: fixed; */
     width: auto;
 }
@@ -45,6 +45,7 @@ th, td {
 
 /* for GET page */
 #sudoku_table td {
+    text-align: center;
     width: 3.5vw;
     height: 3.5vw;
 }
