@@ -25,13 +25,13 @@ main {
 
 /* inner table borders */
 th, td {
-    border: 3px solid gray;
+    border: 2px solid black;
     border-collapse: collapse;
 }
 
 /* outer table borders */
 #sudoku_table {
-    border: 3px solid #2A293E;
+    border: 4px solid red;
     /* table-layout: fixed; */
     width: auto;
 }
@@ -41,6 +41,9 @@ th, td {
     width: 3.5vw;
     height: 3.5vw;
     border: none;
+    margin: 0px;
+    padding: 0px;
+    padding: 0px;
 }
 
 /* for GET page */
@@ -52,11 +55,11 @@ th, td {
 
 
 #sudoku_table td:nth-child(3n){
-    border-right: 3px solid red;
+    border-right: 4px solid red;
 }
 
 #sudoku_table tr:nth-child(3n){
-    border-bottom: 3px solid red;
+    border-bottom: 4px solid red;
 }
 
  /* remove blue outline on focus */
