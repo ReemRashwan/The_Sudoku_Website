@@ -2,15 +2,68 @@ from typing import Dict, List, Tuple, Optional
 
 
 class SudokuGame:
-    def __init__(self, sudoku_values: Dict) -> None:
-        """ Initialize a sudoku grid """
-        self.grid: Dict = sudoku_values
+    def __init__(self, sudoku_values: List = None, file_path: str = None) -> None:
+        """ Initialize a sudoku grid with valid values """
+        self.grid: Dict = {}
         self.empty_cells_indices: List[str] = []
         self.filled_cells_indices: List[str] = []
 
-        # check size, 81 elements, and get empty indices
+        # initialize grid and check if it has 81 values.
+        self.initialize_grid(sudoku_values, file_path)
         self.check_grid_size()
+
+        # store filled and empty cells in separate groups.
         self.classify_cells_as_filled_or_empty()
+
+    def initialize_grid(self, sudoku_values: List = None, file_path: str = None) -> None:
+        """ Initialize sudoku grid from a list or a file or fill with zeros """
+        grid: Dict = {}
+        # initialize from list or a file.
+        if sudoku_values is not None:
+            # initialize from list
+            if isinstance(sudoku_values, list) and len(sudoku_values) == 81:
+                # check every value to be in range(1-9)
+                if self.is_values_in_valid_range(sudoku_values):
+                    grid = self.to_dict_sudoku(sudoku_values)
+        elif file_path is not None:
+            grid = self.to_dict_sudoku(self.read_from_file(file_path))
+
+        # if grid is empty, fill with zeros
+        if not grid:
+            grid = self.to_dict_sudoku([0 for _ in range(81)])
+
+        self.grid = grid
+
+    @staticmethod
+    def read_from_file(file_path: str) -> List:
+        """ Read values from file. """
+        # read the file line by line.
+        with open(file_path, 'r') as file:
+            line = file.readline().strip()
+
+        # store values in as numbers in a list
+        sudoku_values = [int(number) for number in line.strip()]
+
+        # check if each value in range (1-9)
+        if SudokuGame.is_values_in_valid_range(sudoku_values):
+            return sudoku_values  # each sudoku is a list of numbers
+
+    @staticmethod
+    def to_dict_sudoku(sudoku_values: List):
+        """ Convert list of sudoku values to dict """
+        sudoku_dict = {}
+        for i, key in enumerate("ABCDEFGHI"):
+            # append nine values for each key
+            sudoku_dict[key] = [int(number) for number in sudoku_values[i * 9: i * 9 + 9]]
+        return sudoku_dict
+
+    @staticmethod
+    def is_values_in_valid_range(sudoku_values: List) -> bool:
+        """ Check that each value is in range from 0-9 (zero for empty cells)."""
+        for number in sudoku_values:
+            if not (0 <= number <= 9):
+                raise ValueError(f"{number} is not in valid range (1-9).")
+        return True
 
     def display(self) -> None:
         """ Display the sudoku as a grid"""
@@ -39,7 +92,7 @@ class SudokuGame:
                 else:
                     self.filled_cells_indices.append(f"{key}{index}")
 
-    def solve_and_check_solution(self) -> bool:
+    def solve(self) -> bool:
         """ Solve sudoku and return true if a solution is found. """
         first_unsolved_key, first_unsolved_index = self.get_first_unsolved() or (None, None)
         self.solve_cell(first_unsolved_key, first_unsolved_index)
@@ -151,47 +204,36 @@ class SudokuGame:
             return False
         return True
 
-    def check_solution(self, actual_solution):
+    def check_solution(self, actual_solution: Dict) -> bool:
         """ check if actual solution matches ours """
         return self.grid == actual_solution
 
 
-def read_sudokus_from_file(file_path: str) -> List[Dict]:
-    # list of sudokus
-    sudokus = []
-    # read the file line by line.
-    with open(file_path, 'r') as file:
-        for line in file:
-            sudokus.append(to_dict_sudoku(line.strip()))  # each sudoku is a list of numbers
-
-    # list of sudokus lists
-    return sudokus
-
-
-def to_dict_sudoku(sudoku_values):
-    sudoku = {}
-    for i, key in enumerate("ABCDEFGHI"):
-        # append nine values for each key
-        sudoku[key] = [int(number) for number in sudoku_values[i*9: i*9 + 9]]
-    return sudoku
-
-
 if __name__ == "__main__":
-    sudokus = read_sudokus_from_file("sudoku.txt")
-    sudokus_solutions = read_sudokus_from_file("sudoku_solution.txt")
+    sudoku = SudokuGame(file_path="sudoku.txt")
+    sudoku_solution = SudokuGame(file_path="sudoku_solution.txt")
 
-    sudoku = SudokuGame(sudokus[0])
-    sudoku_solution = SudokuGame(sudokus_solutions[0])
-
+    print("====================")
     sudoku.display()
     print("====================")
-    if sudoku.solve_and_check_solution():
-        print("Solved")
+
+    # solve the given sudoku
+    sudoku.solve()
+
+    if sudoku.is_solved():
+        # display our solution
+        print("Solved, Our Solution")
+        sudoku.display()
+        print("====================")
     else:
         print("Couldn't solve the sudoku")
-    sudoku.display()
 
-    if sudoku.check_solution(sudoku_solution):
-        print("Your solution matches ours")
+    # display actual solution
+    print("Actual Solution")
+    sudoku_solution.display()
+    print("====================")
+
+    if sudoku.check_solution(sudoku_solution.grid):
+        print("Our solution matches the actual one.")
     else:
         print("Wrong solution")
