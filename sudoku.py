@@ -1,176 +1,197 @@
-from typing import List, Optional
+from typing import Dict, List, Tuple, Optional
 
 
 class SudokuGame:
-    def __init__(self, sudoku_values: list) -> None:
-        self.grid: List = sudoku_values
-        self.empty_cells_indices: List = []
+    def __init__(self, sudoku_values: Dict) -> None:
+        """ Initialize a sudoku grid """
+        self.grid: Dict = sudoku_values
+        self.empty_cells_indices: List[str] = []
+        self.filled_cells_indices: List[str] = []
 
         # check size, 81 elements, and get empty indices
         self.check_grid_size()
-        self.get_empty_cells_indices()
+        self.classify_cells_as_filled_or_empty()
 
     def display(self) -> None:
+        """ Display the sudoku as a grid"""
         # print each row in a separate line
-        for index in range(0, 73, 9):
-            print(*self.grid[index: index + 9])
+        for key in self.grid:
+            print(*self.grid[key])
 
     def check_grid_size(self):
-        sudoku_length = len(self.grid)
-        assert sudoku_length == 81, f"sudoku list should be of length 81, got {sudoku_length} instead"
+        """ Check the number of sudoku values, if not 81, terminate """
+        sudoku_values = self.get_flattened_sudoku_values()
+        sudoku_length = len(sudoku_values)
+        if sudoku_length != 81:
+            raise AssertionError(f"sudoku list should be of length 81, got {sudoku_length} instead")
 
-    def get_empty_cells_indices(self) -> None:
-        for index, value in enumerate(self.grid):
-            if value == 0:
-                self.empty_cells_indices.append(index)
+    def get_flattened_sudoku_values(self) -> List[int]:
+        """ Get sudoku values in a list """
+        sudoku_values = [number for row in self.grid.values() for number in row]
+        return sudoku_values
 
-    def get_next_unsolved(self, current_unsolved_index: int = None) -> Optional[int]:
-        # if this is the first call to the function, return first index
-        if current_unsolved_index is None:
-            return self.empty_cells_indices[0] if len(self.empty_cells_indices) > 0 else None
+    def classify_cells_as_filled_or_empty(self) -> None:
+        """ Save filled cells and empty cells keys and indices """
+        for key, row in self.grid.items():
+            for index in range(len(row)):
+                if row[index] == 0:
+                    self.empty_cells_indices.append(f"{key}{index}")
+                else:
+                    self.filled_cells_indices.append(f"{key}{index}")
 
-        # else, get index of next empty cell
+    def solve_and_check_solution(self) -> bool:
+        """ Solve sudoku and return true if a solution is found. """
+        first_unsolved_key, first_unsolved_index = self.get_first_unsolved() or (None, None)
+        self.solve_cell(first_unsolved_key, first_unsolved_index)
+        return self.is_solved()
+
+    def get_first_unsolved(self) -> Optional[Tuple[str, int]]:
+        """ Get first empty cell key and index """
+        # if nothing is empty
+        if len(self.empty_cells_indices) == 0:
+            return None
+        # return key, index of first item, Example: "A3" -> 'A', 3
+        return self.empty_cells_indices[0][0], int(self.empty_cells_indices[0][1])
+
+    def get_next_unsolved(self, current_key: str, current_index: int) -> Optional[Tuple[str, int]]:
+        """ Get next cell key and index, if nothing left return None """
+        # if the grid is full from the first time
         try:
-            next_unresolved = self.empty_cells_indices[self.empty_cells_indices.index(current_unsolved_index) + 1]
-        except IndexError:
-            # if current is the last index - no more empty cells
+            current_cell_order = self.empty_cells_indices.index(f"{current_key}{current_index}")
+        except ValueError:
             return None
 
-        return next_unresolved
+        # get next cell key and index, if nothing is left to be solved return None.
+        try:
+            next_unsolved = self.empty_cells_indices[current_cell_order + 1]
+            # return key, index
+            return next_unsolved[0], int(next_unsolved[1])
+        except IndexError:
+            # if no more empty cells, return None
+            return None
 
-    def solve_sudoku(self) -> bool:
-        self.solve(self.empty_cells_indices[0])
-        # if all cells are filled, success
-        if 0 not in self.grid:
-            return True
-        else:
-            return False
-
-    def solve(self, current_index: int) -> None:
-        # Get the first unsolved cell (contains 0)
-        next_index = self.get_next_unsolved(current_index)
-
-        # if all cells are filled
-        if current_index is None:
+    def solve_cell(self, current_key: str, current_index: int) -> None:
+        """ Assign the current empty cell a valid value if possible """
+        # if the grid is completely solved
+        if current_key is None and current_index is None:
             return
 
+        # find next cell key and index
+        next_key, next_index = self.get_next_unsolved(current_key, current_index) or (None, None)
+
+        # assign a valid value.
         for value in range(1, 10):
-            if self.is_valid(current_index, value):
-                self.grid[current_index] = value
-                self.solve(next_index)
+            if self.is_valid(current_key, current_index, value):
+                self.grid[current_key][current_index] = value
+                # solve the next cell
+                self.solve_cell(next_key, next_index)
 
-        # if reached here without finding a valid number, reset cell value
-        # only if we didn't found a solution
-        if 0 in self.grid:
-            self.grid[current_index] = 0
+        # reset cell value if we didn't found a solution
+        if not self.is_solved():
+            self.grid[current_key][current_index] = 0
 
-        return
-
-    def is_valid(self, index: int, value: int) -> bool:
-        # if the value doesn't exist in row, col, box then it is valid.
-
-        # get row number, and offset from the start of the row
-        row_start_index = (index // 9) * 9
-        cell_offset = index - row_start_index
-
+    def is_valid(self, key: str, index: int, value: int) -> bool:
+        """ Value is valid if the value doesn't exist in row, col, box (subgrid)."""
         def is_valid_row() -> bool:
-            # find the first index in the row except for current cell
-            row_values = self.grid[row_start_index: row_start_index + 9]
-
-            if value in row_values:
+            """ Check if value already exists in the row """
+            if value in self.grid[key]:
                 return False
-
-            # if no duplicates
             return True
 
         def is_valid_col() -> bool:
-            # rows starting indices
-            for i in range(0, 81, 9):
-                if value == self.grid[i + cell_offset]:
+            """ Check if value already exists in the column """
+            # if value in column (different keys, same index)
+            for row in self.grid.values():
+                if value == row[index]:
                     return False
-            # if no duplicates
             return True
 
         def is_valid_box() -> bool:
-            def get_box_values() -> List:
-                # get the index of the first cell in the same box in the same row
-                # we can use this offset to get the first item in each row that
-                # belongs to the box we are in
-                horizontal_box_start_offset = cell_offset - (cell_offset % 3)
+            """ Check if value already exists in the box (subgrid) """
+            # get the index of the first cell in the same box in the same row
+            horizontal_box_start_index = index - (index % 3)
 
-                # starting indices
-                top_boxes_rows = [0, 9, 18]
-                middle_boxes_rows = [27, 36, 45]
-                bottom_boxes_rows = [54, 63, 72]
+            # starting indices
+            box_rows: List
 
-                box_indices = []
-                box_values = []
+            # groups of boxes vertically (top, middle, bottom)
+            top_boxes_keys = ['A', 'B', 'C']
+            middle_boxes_keys = ['D', 'E', 'F']
+            bottom_boxes_keys = ['G', 'H', 'I']
 
-                # adjust the starting index in the three rows of the box
-                if row_start_index in top_boxes_rows:
-                    box_rows_start_indices = [item + horizontal_box_start_offset for item in top_boxes_rows]
-                elif row_start_index in middle_boxes_rows:
-                    box_rows_start_indices = [item + horizontal_box_start_offset for item in middle_boxes_rows]
-                else:
-                    box_rows_start_indices = [item + horizontal_box_start_offset for item in bottom_boxes_rows]
+            # assign box rows to the rows that the cell belongs to
+            if key in top_boxes_keys:
+                box_rows = top_boxes_keys
+            elif key in middle_boxes_keys:
+                box_rows = middle_boxes_keys
+            else:
+                box_rows = bottom_boxes_keys
 
-                # get the next two indices after the starting index in each row
-                for item in box_rows_start_indices:
-                    box_indices.extend([item, item + 1, item + 2])
+            # iterate through each row values in the box.
+            for row_key in box_rows:
+                # values from first value in the row in the box to the third value
+                box_row_values = self.grid[row_key][horizontal_box_start_index:horizontal_box_start_index + 3]
+                if value in box_row_values:
+                    return False
 
-                # get box values
-                for i in box_indices:
-                    box_values.append(self.grid[i])
-
-                return box_values
-
-            sub_grid_values = get_box_values()
-            # if duplicate value
-            if value in sub_grid_values:
-                return False
-            # if unique in box
+            # if the value doesn't exist in the box.
             return True
 
+        # if value doesn't violate sudoku rules
         if is_valid_row() and is_valid_col() and is_valid_box():
             return True
 
-        # if any condition is violated
         return False
 
-    def check_solution(self, sudoku_solution):
-        sudoku_solution_length = len(sudoku_solution)
-        if sudoku_solution_length != 81:
-            print(f"sudoku solution list should be of length 81, got {sudoku_solution_length} instead")
-        return self.grid == sudoku_solution
+    def is_solved(self) -> bool:
+        """ check if the sudoku is solved (doesn't contain zeros) """
+        sudoku_values = self.get_flattened_sudoku_values()
+        # if there are still zeros in the grid
+        if 0 in sudoku_values:
+            return False
+        return True
+
+    def check_solution(self, actual_solution):
+        """ check if actual solution matches ours """
+        return self.grid == actual_solution
 
 
-def read_sudokus_from_file(file_path: str) -> List[List[int]]:
+def read_sudokus_from_file(file_path: str) -> List[Dict]:
     # list of sudokus
     sudokus = []
-
-    # open the file
-    try:
-        file = open(file_path, 'r')
-    except FileNotFoundError as e:
-        raise e
-
     # read the file line by line.
-    with file:
+    with open(file_path, 'r') as file:
         for line in file:
-            sudokus.append([int(number) for number in line.strip()])  # each sudoku is a list of numbers
+            sudokus.append(to_dict_sudoku(line.strip()))  # each sudoku is a list of numbers
 
     # list of sudokus lists
     return sudokus
 
 
+def to_dict_sudoku(sudoku_values):
+    sudoku = {}
+    for i, key in enumerate("ABCDEFGHI"):
+        # append nine values for each key
+        sudoku[key] = [int(number) for number in sudoku_values[i*9: i*9 + 9]]
+    return sudoku
+
+
 if __name__ == "__main__":
     sudokus = read_sudokus_from_file("sudoku.txt")
+    sudokus_solutions = read_sudokus_from_file("sudoku_solution.txt")
+
     sudoku = SudokuGame(sudokus[0])
+    sudoku_solution = SudokuGame(sudokus_solutions[0])
+
     sudoku.display()
     print("====================")
-    sudoku.solve_sudoku()
-    sudoku.display()
-    if sudoku.check_solution(read_sudokus_from_file("sudoku_solution.txt")[0]):
-        print("Right Solution")
+    if sudoku.solve_and_check_solution():
+        print("Solved")
     else:
-        print("Wrong Solution")
+        print("Couldn't solve the sudoku")
+    sudoku.display()
+
+    if sudoku.check_solution(sudoku_solution):
+        print("Your solution matches ours")
+    else:
+        print("Wrong solution")
