@@ -100,7 +100,7 @@ class SudokuGame:
         # create a copy of the grid
         self.is_filled_map = self.grid.copy()
         for key, row in self.is_filled_map.items():
-            self.is_filled_map[key] = map(lambda number: 0 if number == 0 else 1, row)
+            self.is_filled_map[key] = list(map(lambda number: 0 if number == 0 else 1, row))
 
     def solve(self) -> bool:
         """ Solve sudoku and return true if a solution is found. """
