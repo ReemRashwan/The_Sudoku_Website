@@ -66,11 +66,15 @@ class SudokuGame:
                 raise ValueError(f"{number} is not in valid range (1-9).")
         return True
 
-    def display(self) -> None:
-        """ Display the sudoku as a grid"""
-        # print each row in a separate line
-        for key in self.grid:
-            print(*self.grid[key])
+    def display(self, sudoku_grid: Dict = None) -> None:
+        """ Display the sudoku as a grid, each row in a separate line """
+        # if grid is not passed, print self.grid
+        if sudoku_grid is None:
+            for key in self.grid:
+                print(*self.grid[key])
+        else:
+            for key in sudoku_grid:
+                print(*sudoku_grid[key])
 
     def check_grid_size(self):
         """ Check the number of sudoku values, if not 81, terminate """
