@@ -5,15 +5,16 @@ class SudokuGame:
     def __init__(self, sudoku_values: List = None, file_path: str = None) -> None:
         """ Initialize a sudoku grid with valid values """
         self.grid: Dict = {}
+        self.is_filled_map: Dict = {}  # sudoku grid map with 1 as filled, 0 as empty cell for visualization.
         self.empty_cells_indices: List[str] = []
-        self.filled_cells_indices: List[str] = []
 
         # initialize grid and check if it has 81 values.
         self.initialize_grid(sudoku_values, file_path)
         self.check_grid_size()
 
-        # store filled and empty cells in separate groups.
-        self.classify_cells_as_filled_or_empty()
+        # store empty cells in separate groups.
+        self.find_empty_cells()
+        self.set_is_filled_map()
 
     def initialize_grid(self, sudoku_values: List = None, file_path: str = None) -> None:
         """ Initialize sudoku grid from a list or a file or fill with zeros """
@@ -83,14 +84,19 @@ class SudokuGame:
         sudoku_values = [number for row in self.grid.values() for number in row]
         return sudoku_values
 
-    def classify_cells_as_filled_or_empty(self) -> None:
-        """ Save filled cells and empty cells keys and indices """
+    def find_empty_cells(self) -> None:
+        """ Save empty cells keys and indices """
         for key, row in self.grid.items():
             for index in range(len(row)):
                 if row[index] == 0:
                     self.empty_cells_indices.append(f"{key}{index}")
-                else:
-                    self.filled_cells_indices.append(f"{key}{index}")
+
+    def set_is_filled_map(self) -> None:
+        """ map sudoku values to 0 if empty, 1 if filled. Useful for visualization """
+        # create a copy of the grid
+        self.is_filled_map = self.grid.copy()
+        for key, row in self.is_filled_map.items():
+            self.is_filled_map[key] = map(lambda number: 0 if number == 0 else 1, row)
 
     def solve(self) -> bool:
         """ Solve sudoku and return true if a solution is found. """
@@ -216,6 +222,8 @@ if __name__ == "__main__":
     print("====================")
     sudoku.display()
     print("====================")
+    # sudoku.display(sudoku.is_filled_map)
+    # print("====================")
 
     # solve the given sudoku
     sudoku.solve()

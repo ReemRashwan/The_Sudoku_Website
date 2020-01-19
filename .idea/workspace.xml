@@ -290,7 +290,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٢٥" />
       <updated>1579343323455</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL؜٠٠٠٢٦" summary="Accept a list or a file_path to sudoku values when creating a sudoku object.">
+      <created>1579377619607</created>
+      <option name="number" value="LOCAL؜٠٠٠٢٦" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٢٦" />
+      <updated>1579377619607</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,7 +334,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="add sudoku route in app.py" />
     <MESSAGE value="Create empty Sudoku grid using jinja" />
     <MESSAGE value="Create the SudokuGame Class with display function." />
     <MESSAGE value="Modify SudokuGame Constructor to accept list instead of dict, and add load function definition" />
@@ -353,7 +358,8 @@
     <MESSAGE value="Adjusting table colors." />
     <MESSAGE value="Adjusting sudoku table border style." />
     <MESSAGE value="Solve as a dictionary instead of list." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve as a dictionary instead of list." />
+    <MESSAGE value="Accept a list or a file_path to sudoku values when creating a sudoku object." />
+    <option name="LAST_COMMIT_MESSAGE" value="Accept a list or a file_path to sudoku values when creating a sudoku object." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1579271666080">
@@ -376,10 +382,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="514" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1579098490404" />
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579377510672">
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579377618219">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579377510672" />
+    <state x="131" y="23" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579377618219" />
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1579099084058">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -400,28 +406,28 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1536" height="394" key="GridCell.Tab.-1.right/0.30.1536.834@0.30.1536.834" timestamp="1579090086766" />
-    <state width="1536" height="421" key="GridCell.Tab.0.bottom" timestamp="1579377477192">
+    <state width="1515" height="351" key="GridCell.Tab.0.bottom" timestamp="1579439466969">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1536" height="421" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579377477192" />
+    <state width="1515" height="351" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579439466969" />
     <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1536" height="421" key="GridCell.Tab.0.center" timestamp="1579377477192">
+    <state width="1515" height="351" key="GridCell.Tab.0.center" timestamp="1579439466969">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1536" height="421" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579377477192" />
+    <state width="1515" height="351" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579439466969" />
     <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1536" height="421" key="GridCell.Tab.0.left" timestamp="1579377477192">
+    <state width="1515" height="351" key="GridCell.Tab.0.left" timestamp="1579439466969">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1536" height="421" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579377477192" />
+    <state width="1515" height="351" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579439466969" />
     <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1577683259641" />
     <state width="1536" height="394" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1536" height="421" key="GridCell.Tab.0.right" timestamp="1579377477192">
+    <state width="1515" height="351" key="GridCell.Tab.0.right" timestamp="1579439466969">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1536" height="421" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579377477192" />
+    <state width="1515" height="351" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579439466969" />
     <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
     <state width="1536" height="443" key="GridCell.Tab.1.bottom" timestamp="1579376875138">
@@ -464,6 +470,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="510" y="57" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1579082771070" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1579378208090">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1579378208090" />
   </component>
   <component name="masterDetails">
     <states>
