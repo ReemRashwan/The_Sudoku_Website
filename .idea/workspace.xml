@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Change secret key with every application to clear all session variables.">
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sudoku_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +332,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٣٢" />
       <updated>1579523434380</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL؜٠٠٠٣٣" summary="Redirect the user to refill the sudoku if the sudoku is invalid or it doesn't have a solution.">
+      <created>1579525777972</created>
+      <option name="number" value="LOCAL؜٠٠٠٣٣" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٣٣" />
+      <updated>1579525777972</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -379,7 +386,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add sudoku solver in app.py" />
     <MESSAGE value="Add sudoku generator and sudoku solver files." />
     <MESSAGE value="Create a separate file for sudoku table." />
     <MESSAGE value="Create the sudoku table with its CSS." />
@@ -404,7 +410,8 @@
     <MESSAGE value="convert the map object to a list when setting is_filled_map." />
     <MESSAGE value="Check if the grid is valid before solving." />
     <MESSAGE value="Change secret key with every application to clear all session variables." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change secret key with every application to clear all session variables." />
+    <MESSAGE value="Redirect the user to refill the sudoku if the sudoku is invalid or it doesn't have a solution." />
+    <option name="LAST_COMMIT_MESSAGE" value="Redirect the user to refill the sudoku if the sudoku is invalid or it doesn't have a solution." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1579271666080">
@@ -427,10 +434,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="514" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1579098490404" />
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579525730480">
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579539538719">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579525730480" />
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579539538719" />
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1579523818021">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -451,28 +458,28 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1536" height="394" key="GridCell.Tab.-1.right/0.30.1536.834@0.30.1536.834" timestamp="1579090086766" />
-    <state width="1515" height="395" key="GridCell.Tab.0.bottom" timestamp="1579523325791">
+    <state width="1515" height="395" key="GridCell.Tab.0.bottom" timestamp="1579538868171">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="395" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579523325791" />
+    <state width="1515" height="395" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579538868171" />
     <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1515" height="395" key="GridCell.Tab.0.center" timestamp="1579523325791">
+    <state width="1515" height="395" key="GridCell.Tab.0.center" timestamp="1579538868171">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="395" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579523325791" />
+    <state width="1515" height="395" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579538868171" />
     <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1515" height="395" key="GridCell.Tab.0.left" timestamp="1579523325791">
+    <state width="1515" height="395" key="GridCell.Tab.0.left" timestamp="1579538868171">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="395" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579523325791" />
+    <state width="1515" height="395" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579538868171" />
     <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1577683259641" />
     <state width="1536" height="394" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1515" height="395" key="GridCell.Tab.0.right" timestamp="1579523325791">
+    <state width="1515" height="395" key="GridCell.Tab.0.right" timestamp="1579538868171">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="395" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579523325791" />
+    <state width="1515" height="395" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579538868171" />
     <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
     <state width="1515" height="369" key="GridCell.Tab.1.bottom" timestamp="1579523008643">

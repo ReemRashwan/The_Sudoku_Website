@@ -42,11 +42,14 @@ def sudoku_solver():
 
         # check if the grid doesn't violate the sudoku rules before solving
         is_valid_grid = sudoku.is_valid_grid()
+
         if not is_valid_grid:
             # prompting the user to enter a valid grid.
             message = "القيم التي أدخلتها يوجد بينها تعارض، " \
                       "رجاءً تأكد أن كل الصفوف والأعمدة والمربعات لا تحتوي على قيم مكررة."
-            return render_template("sudoku_solver.html", sudoku=sudoku, message=message)
+            # which is always false since the grid is not valid
+            is_solved = sudoku.is_solved()
+            return render_template("sudoku_solver.html", sudoku=sudoku, is_solved=is_solved, message=message)
 
         # solve the sudoku
         is_solved = sudoku.solve()
@@ -57,13 +60,13 @@ def sudoku_solver():
 
         if is_solved:
             # display the results.
-            return redirect(url_for("sudoku_solver_result"))
+            return redirect(url_for("sudoku_solver_result", is_solved=is_solved))
         else:
             # prompting the user that the sudoku doesn't have a solution and
             # to check the entered values.
             message = "لا يوجد حل لهذه السودوكو. هل أنت متأكد من القيم المدخلة؟"
             print("No Solution")
-            return render_template("sudoku_solver.html", sudoku=sudoku, message=message)
+            return render_template("sudoku_solver.html", sudoku=sudoku, is_solved=is_solved, message=message)
 
 
 @app.route("/sudoku_solver_result")
@@ -76,8 +79,10 @@ def sudoku_solver_result():
 
     # deserialize the object
     sudoku = json.loads(sudoku)
+    is_solved = sudoku
+
     session.clear()
-    return render_template("sudoku_solver_result.html", sudoku=sudoku)
+    return render_template("sudoku_solver_result.html", sudoku=sudoku, is_solved=is_solved)
 
 
 if __name__ == "__main__":
