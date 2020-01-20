@@ -1,11 +1,17 @@
 <table id="sudoku_table">
+    <tbody>
     {% if sudoku is defined %}
         {% if is_solved %}
         <!-- Filled Sudoku Table -->
-            {% for row in sudoku.grid.values() %}
+            {% for key, row in sudoku.grid.items() %}
                 <tr>
                     {% for value in row %}
-                        <td style='text-align: center'>{{ value }}</td>
+                        <!-- Color Solved Cells Differently -->
+                        {% if sudoku.is_filled_map[key][loop.index0] == 0 %}
+                            <td class="solved">{{ value }}</td>
+                        {% else %}
+                            <td class="was_filled">{{ value }}</td>
+                        {% endif %}
                     {% endfor %}
                 </tr>
             {% endfor %}
@@ -33,4 +39,5 @@
             </tr>
         {% endfor %}
     {% endif %}
+    </tbody>
 </table>

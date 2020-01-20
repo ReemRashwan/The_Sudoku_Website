@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Modify sudoku table numbers size and colors (based on whether they were given or not by the user).">
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sudoku_solver.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_solver.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sudoku_solver_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_solver_result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sudoku_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -353,7 +349,25 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٣٥" />
       <updated>1579539693111</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL؜٠٠٠٣٦" summary="Make tbody fill the table.">
+      <created>1579547859774</created>
+      <option name="number" value="LOCAL؜٠٠٠٣٦" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٣٦" />
+      <updated>1579547859774</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٣٧" summary="Modify sudoku table numbers size and colors (based on whether they were given or not by the user).">
+      <created>1579547947301</created>
+      <option name="number" value="LOCAL؜٠٠٠٣٧" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٣٧" />
+      <updated>1579547947301</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٣٨" summary="Change sudoku container width in sudoku_solver.html and sudoku_solver_result.html.">
+      <created>1579548032449</created>
+      <option name="number" value="LOCAL؜٠٠٠٣٨" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٣٨" />
+      <updated>1579548032449</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -401,9 +415,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Create the sudoku table with its CSS." />
-    <MESSAGE value="Move direction attribute to main tag instead of html tag, add CSS file link." />
-    <MESSAGE value="Make templates reload automatically." />
     <MESSAGE value="Delete empty helpers.py file." />
     <MESSAGE value="Add index.html and sudoku_generator.html file." />
     <MESSAGE value="Make responsive sudoku table, adjust overall style." />
@@ -426,7 +437,10 @@
     <MESSAGE value="Redirect the user to refill the sudoku if the sudoku is invalid or it doesn't have a solution." />
     <MESSAGE value="Send is_solved variable to the templates." />
     <MESSAGE value="Handle the case when the sudoku is not solved and values should be re-entered in the sudoku_table.html template." />
-    <option name="LAST_COMMIT_MESSAGE" value="Handle the case when the sudoku is not solved and values should be re-entered in the sudoku_table.html template." />
+    <MESSAGE value="Make tbody fill the table." />
+    <MESSAGE value="Modify sudoku table numbers size and colors (based on whether they were given or not by the user)." />
+    <MESSAGE value="Change sudoku container width in sudoku_solver.html and sudoku_solver_result.html." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change sudoku container width in sudoku_solver.html and sudoku_solver_result.html." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1579271666080">
@@ -449,10 +463,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="514" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1579098490404" />
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579547967678">
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579548028951">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579547967678" />
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579548028951" />
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1579523818021">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
