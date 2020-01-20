@@ -1,13 +1,28 @@
 <table id="sudoku_table">
     {% if sudoku is defined %}
+        {% if is_solved %}
         <!-- Filled Sudoku Table -->
-        {% for row in sudoku.grid.values() %}
-            <tr>
-                {% for value in row %}
-                    <td style='text-align: center'>{{ value | hide_if_empty }}</td>
-                {% endfor %}
-            </tr>
-        {% endfor %}
+            {% for row in sudoku.grid.values() %}
+                <tr>
+                    {% for value in row %}
+                        <td style='text-align: center'>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        {% else %}
+            {% for key, row in sudoku.grid.items() %}
+                <tr>
+                    {% for value in row %}
+                        {% if value != 0 %}
+                            <td><input type="number" min="1" max="9"
+                                       name="cell_{{ key }}{{ loop.index0 }}" value="{{ value }}"></td>
+                        {% else %}
+                            <td><input type="number" min="1" max="9" name="cell_{{ key }}{{ loop.index0 }}"></td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        {% endif %}
     {% else %}
         <!-- Empty Sudoku Table -->
         {% for letter in 'ABCDEFGHI' %}
