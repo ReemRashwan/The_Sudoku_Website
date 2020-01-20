@@ -104,9 +104,83 @@ class SudokuGame:
 
     def solve(self) -> bool:
         """ Solve sudoku and return true if a solution is found. """
-        first_unsolved_key, first_unsolved_index = self.get_first_unsolved() or (None, None)
-        self.solve_cell(first_unsolved_key, first_unsolved_index)
+        # is the grid doesn't violate the sudoku rules from the beginning
+        if self.is_valid_grid():
+            first_unsolved_key, first_unsolved_index = self.get_first_unsolved() or (None, None)
+            self.solve_cell(first_unsolved_key, first_unsolved_index)
+        else:
+            print("the grid is not valid.")
+
         return self.is_solved()
+
+    def is_valid_grid(self) -> bool:
+        def has_duplicates(values: List[int]) -> bool:
+            def remove_zeros():
+                values_without_zeros = [number for number in values if number != 0]
+                return values_without_zeros
+
+            values = remove_zeros()
+            if len(values) != len(set(values)):
+                return True
+            return False
+
+        def is_valid_rows() -> bool:
+            for row in self.grid.values():
+                # if there is duplicate values, the set length will be shorter.
+                if has_duplicates(row):
+                    return False
+            return True
+
+        def is_valid_cols() -> bool:
+            for index in range(9):
+                column_values = [self.grid[key][index] for key in "ABCDEFGHI"]
+                # if there is duplicate values, the set length will be shorter.
+                if has_duplicates(column_values):
+                    return False
+            return True
+
+        def is_valid_boxes() -> bool:
+            def get_box_values(box_number: int) -> List:
+                assert 0 <= box_number <= 8, "Box number should be in range 0 - 8"
+
+                # to which rows does the box belong.
+                # box_rows: List = []
+                # list of box values
+                box_values: List = []
+
+                # get the index of the first horizontal cell in the same box
+                # Example: box 0, will have indices 0, 1, 2 in 'A', 'B' and 'C'.
+                horizontal_box_start_index = (box_number % 3) * 3
+
+                # groups of boxes vertically (top, middle, bottom)
+                top_boxes_keys = ['A', 'B', 'C']
+                middle_boxes_keys = ['D', 'E', 'F']
+                bottom_boxes_keys = ['G', 'H', 'I']
+
+                # assign box rows to the rows that the cell belongs to
+                if 0 <= box_number <= 2:  # first 3 boxes
+                    box_rows = top_boxes_keys
+                elif 3 <= box_number <= 5:  # second 3 boxes
+                    box_rows = middle_boxes_keys
+                else:  # third 3 boxes
+                    box_rows = bottom_boxes_keys
+
+                # iterate through each row values in the box.
+                for row_key in box_rows:
+                    # values from first value in the row in the box to the third value
+                    box_values.extend(self.grid[row_key][horizontal_box_start_index:horizontal_box_start_index + 3])
+
+                return box_values
+
+            for box_number in range(9):
+                box_values = get_box_values(box_number)
+                if has_duplicates(box_values):
+                    return False
+            return True
+
+        if is_valid_rows() and is_valid_cols() and is_valid_boxes():
+            return True
+        return False
 
     def get_first_unsolved(self) -> Optional[Tuple[str, int]]:
         """ Get first empty cell key and index """
