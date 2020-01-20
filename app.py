@@ -15,16 +15,17 @@ app.secret_key = os.urandom(32)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return redirect(url_for("sudoku_solver"))
 
 
 @app.route("/sudoku_solver", methods=["GET", "POST"])
 def sudoku_solver():
     if request.method == "GET":
+        session.clear()
         # if visiting for the first time or after coming from different page
         # empty sudoku grid.
-        welcoming_message = "أهلا بك، رجاءً أدخل قيم السودوكو لنتمكن من حلها لك."
-        return render_template("sudoku_solver.html", message=welcoming_message)
+        message = "أهلا بك، رجاءً أدخل قيم السودوكو لنتمكن من حلها لك."
+        return render_template("sudoku_solver.html", message=message)
 
     elif request.method == "POST":
         # fetch sudoku values from the grid
