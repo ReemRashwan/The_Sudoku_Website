@@ -88,5 +88,4 @@ def sudoku_solver_result():
 
 
 if __name__ == "__main__":
-    # TODO: TURN OFF DEBUGGING MODE
-    app.run(debug=True)
+    app.run()
