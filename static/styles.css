@@ -51,11 +51,24 @@ th, td {
 
 /* for GET page */
 #sudoku_table td {
+    font-size: 1.5em;
     text-align: center;
     width: 3.5vw;
     height: 3.5vw;
+    margin: 0px;
+    padding: 0px;
+
 }
 
+.solved {
+    color: #303030;
+}
+
+.was_filled {
+    font-weight: 0.9;
+    color: red;
+    text-shadow: 1px 1px 2px gray;
+}
 
 #sudoku_table td:nth-child(3n){
     border-right: 4px solid red;
