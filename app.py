@@ -6,7 +6,9 @@ app = Flask(__name__)
 
 # reloading templates without restarting the server.
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-app.secret_key = "TFIOSEKAE"
+
+# clear all session variable before starting the app
+app.secret_key = os.urandom(32)
 
 
 @app.route("/")

@@ -1,10 +1,10 @@
 <table id="sudoku_table">
-    {% if sudoku_values is defined %}
-        <!-- Filled Sudoku Values-->
-        {% for row_key in sudoku_values %}
+    {% if sudoku is defined %}
+        <!-- Filled Sudoku Table -->
+        {% for row in sudoku.grid.values() %}
             <tr>
-                {% for col_index in sudoku_values[row_key] %}
-                    <td style='text-align: center'>{{ sudoku_values[row_key][loop.index0] }}</td>
+                {% for value in row %}
+                    <td style='text-align: center'>{{ value | hide_if_empty }}</td>
                 {% endfor %}
             </tr>
         {% endfor %}
