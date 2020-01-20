@@ -23,6 +23,8 @@ main {
 } */
 
 
+/* Sudoku Table Styles*/
+
 /* inner table borders */
 th, td {
     border: 2px solid black;
@@ -31,9 +33,11 @@ th, td {
 
 /* outer table borders */
 #sudoku_table {
+    /* border-collapse: collapse; */
+    display: table;
     border: 4px solid red;
     /* table-layout: fixed; */
-    width: auto;
+    width: 100%;
 }
 
 #sudoku_table td input {
@@ -42,7 +46,6 @@ th, td {
     height: 3.5vw;
     border: none;
     margin: 0px;
-    padding: 0px;
     padding: 0px;
 }
 
