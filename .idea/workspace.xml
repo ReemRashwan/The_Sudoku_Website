@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Modify sudoku table numbers size and colors (based on whether they were given or not by the user).">
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sudoku_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sudoku_table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,7 +366,19 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٣٨" />
       <updated>1579548032449</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL؜٠٠٠٣٩" summary="Add &lt;tbody&gt; to the sudoku table and change numbers colors based on is_filled_map.">
+      <created>1579548139336</created>
+      <option name="number" value="LOCAL؜٠٠٠٣٩" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٣٩" />
+      <updated>1579548139336</updated>
+    </task>
+    <task id="LOCAL؜٠٠٠٤٠" summary="Clear session variables before displaying sudoku_solver page.">
+      <created>1579548364255</created>
+      <option name="number" value="LOCAL؜٠٠٠٤٠" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٤٠" />
+      <updated>1579548364255</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -415,8 +426,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Delete empty helpers.py file." />
-    <MESSAGE value="Add index.html and sudoku_generator.html file." />
     <MESSAGE value="Make responsive sudoku table, adjust overall style." />
     <MESSAGE value="Change sudoku_table code to accept dict instead of list." />
     <MESSAGE value="Add styling classes to sudoku_solver and necessary styling elements." />
@@ -440,7 +449,9 @@
     <MESSAGE value="Make tbody fill the table." />
     <MESSAGE value="Modify sudoku table numbers size and colors (based on whether they were given or not by the user)." />
     <MESSAGE value="Change sudoku container width in sudoku_solver.html and sudoku_solver_result.html." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change sudoku container width in sudoku_solver.html and sudoku_solver_result.html." />
+    <MESSAGE value="Add &lt;tbody&gt; to the sudoku table and change numbers colors based on is_filled_map." />
+    <MESSAGE value="Clear session variables before displaying sudoku_solver page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Clear session variables before displaying sudoku_solver page." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1579271666080">
@@ -463,10 +474,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="514" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1579098490404" />
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579548136031">
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579548359991">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579548136031" />
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579548359991" />
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1579523818021">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -75,14 +75,15 @@ def sudoku_solver_result():
     # getting the sudoku object
     sudoku = session.get('sudoku', None)
 
-    # double check that the sudoku object was passed.
-    assert sudoku is not None, "Can't get the sudoku solution"
+    # if the page if reloaded after displaying the results.
+    if not sudoku:
+        return redirect(url_for("sudoku_solver"))
 
     # deserialize the object
     sudoku = json.loads(sudoku)
     is_solved = sudoku
 
-    session.clear()
+    # session.clear()
     return render_template("sudoku_solver_result.html", sudoku=sudoku, is_solved=is_solved)
 
 
