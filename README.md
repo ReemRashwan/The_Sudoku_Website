@@ -1,11 +1,14 @@
-#Sudoku Solver - حلّال السودوكو
+#The Sudoku Website
+
 موقع بسيط لحل ألغاز السودوكو.
 
 Simple sudoku solver website with Arabic interface.
 
 ## Demo
 You can try the sudoku solver  ***[HERE](https://arabic-sudoku-website.herokuapp.com)***.
+
 ![Sudoku Solver Demo](demo/SudokuSolverDemo.gif)
+
 This sudoku puzzle is taken from  [7Sudoku](http://www.7sudoku.com/view-puzzle?date=20200119).
 
 ## Technologies and Frameworks
