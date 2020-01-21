@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Add README.md and SudokuSolverDemo.gif.">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/SudokuSolverDemo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,7 +398,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٤٣" />
       <updated>1579549716027</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL؜٠٠٠٤٤" summary="Turn off the debugging mode.">
+      <created>1579549758235</created>
+      <option name="number" value="LOCAL؜٠٠٠٤٤" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٤٤" />
+      <updated>1579549758235</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -444,8 +452,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Modify sudoku_solver.html form options." />
-    <MESSAGE value="Modify sudoku_table.html filled table so it starts from 0 not 1." />
     <MESSAGE value="Add sudoku_solver_result.html file." />
     <MESSAGE value="Add sudoku_solver_result route and its related necessary modifications." />
     <MESSAGE value="Adjusting table colors." />
@@ -469,7 +475,9 @@
     <MESSAGE value="Redirect to sudoku solver page if the sudoku is missing in the results page." />
     <MESSAGE value="Change Bootstrap grid classes to md instead of sm." />
     <MESSAGE value="Add pages' titles and change the website title." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add pages' titles and change the website title." />
+    <MESSAGE value="Turn off the debugging mode." />
+    <MESSAGE value="Add README.md and SudokuSolverDemo.gif." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README.md and SudokuSolverDemo.gif." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Menus_and_Toolbars" timestamp="1579271666080">
@@ -492,10 +500,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="514" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1579098490404" />
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579549712585">
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579611688071">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579549712585" />
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579611688071" />
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1579523818021">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -516,28 +524,28 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state width="1536" height="394" key="GridCell.Tab.-1.right/0.30.1536.834@0.30.1536.834" timestamp="1579090086766" />
-    <state width="1515" height="395" key="GridCell.Tab.0.bottom" timestamp="1579549727141">
+    <state width="1515" height="396" key="GridCell.Tab.0.bottom" timestamp="1579609382248">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="395" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579549727141" />
+    <state width="1515" height="396" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579609382248" />
     <state width="1515" height="231" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1515" height="395" key="GridCell.Tab.0.center" timestamp="1579549727141">
+    <state width="1515" height="396" key="GridCell.Tab.0.center" timestamp="1579609382248">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="395" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579549727141" />
+    <state width="1515" height="396" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579609382248" />
     <state width="1515" height="231" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1515" height="395" key="GridCell.Tab.0.left" timestamp="1579549727141">
+    <state width="1515" height="396" key="GridCell.Tab.0.left" timestamp="1579609382248">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="395" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579549727141" />
+    <state width="1515" height="396" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579609382248" />
     <state width="1515" height="231" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1577683259641" />
     <state width="1536" height="394" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
-    <state width="1515" height="395" key="GridCell.Tab.0.right" timestamp="1579549727141">
+    <state width="1515" height="396" key="GridCell.Tab.0.right" timestamp="1579609382248">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="395" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579549727141" />
+    <state width="1515" height="396" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579609382248" />
     <state width="1515" height="231" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1577683259642" />
     <state width="1536" height="394" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1579090264010" />
     <state width="1515" height="369" key="GridCell.Tab.1.bottom" timestamp="1579540750570">
@@ -576,10 +584,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="649" y="357" key="com.intellij.ide.ui.customization.CustomizableActionsPanel$EditIconDialog/0.0.1536.834@0.0.1536.834" timestamp="1579271660715" />
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1579547762082">
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1579550056994">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1579547762082" />
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1579550056994" />
     <state x="341" y="154" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1579506215047">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
