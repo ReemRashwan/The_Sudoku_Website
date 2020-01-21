@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="Add README.md and SudokuSolverDemo.gif.">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/SudokuSolverDemo.gif" afterDir="false" />
+    <list default="true" id="cc883603-f6b0-41bd-bbc2-1cbc5d8d0198" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,7 +403,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٤٤" />
       <updated>1579549758235</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL؜٠٠٠٤٥" summary="Add README.md and SudokuSolverDemo.gif.">
+      <created>1579611725550</created>
+      <option name="number" value="LOCAL؜٠٠٠٤٥" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٤٥" />
+      <updated>1579611725550</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -500,10 +505,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="514" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1579098490404" />
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579611688071">
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2" timestamp="1579611720490">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579611688071" />
+    <state x="122" y="0" width="1317" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579611720490" />
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1579523818021">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
