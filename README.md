@@ -1,8 +1,8 @@
 #The Sudoku Website
 
-موقع بسيط لحل ألغاز السودوكو.
-
 Simple sudoku solver website with Arabic interface.
+
+.موقع بسيط لحل ألغاز السودوكو
 
 ## Demo
 You can try the sudoku solver  ***[HERE](https://arabic-sudoku-website.herokuapp.com)***.
