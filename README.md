@@ -5,7 +5,6 @@
 Simple sudoku solver website with Arabic interface.
 
 ## Demo
-You can try the sudoku solver  ***[HERE](https://arabic-sudoku-website.herokuapp.com)***.
 
 ![Sudoku Solver Demo](demo/SudokuSolverDemo.gif)
 
